@@ -1,0 +1,1 @@
+web: gunicorn ecoloop.wsgi --log-file -
