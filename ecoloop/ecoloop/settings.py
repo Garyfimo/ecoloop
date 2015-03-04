@@ -63,9 +63,9 @@ DATABASES = {
         'NAME': 'deo75d2d42pqas',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': 'acpvettjgngqur',
-        'PASSWORD': 'morade',
+        'PASSWORD': '9s7osD4Ps4GtZcqNX4dIUvW4OP',
         'HOST': 'ec2-50-17-181-147.compute-1.amazonaws.com',                      # Empty for localhost through domain sockets or           '127.0.0.1' for localhost through TCP.
-        'PORT': '9s7osD4Ps4GtZcqNX4dIUvW4OP',                      # Set to empty string for default.
+        'PORT': '5432',                      # Set to empty string for default.
         }
     }
 
