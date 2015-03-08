@@ -1,0 +1,17 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+ 
+{% block title %}{{ title }} | {% trans 'Ecoloop' %}{% endblock %}
+ 
+{% block branding %}
+<style type="text/css">
+  #header
+  {
+    background-color: skyblue;
+    font-size: 20px;
+  }
+</style>
+<h1 id="site-name">{% trans 'Ecoloop Administration' %}</h1>
+{% endblock %}
+ 
+{% block nav-global %}{% endblock %}
