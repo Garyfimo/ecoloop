@@ -9,9 +9,9 @@ class PrendaAdmin(admin.ModelAdmin):
 	list_filter = ['genero','categoria']
 	#search_fields = ['categoria','genero']
 
-@admin.register(Genero)
-class GeneroAdmin(admin.ModelAdmin):
-	pass
+#@admin.register(Genero)
+#class GeneroAdmin(admin.ModelAdmin):
+#	pass
 
 @admin.register(Ecoloop)
 class EcoloopAdmin(admin.ModelAdmin):
