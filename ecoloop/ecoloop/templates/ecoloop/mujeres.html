@@ -12,8 +12,8 @@
     <aside class="wrapped">
       <a href="#" id="nav-logo"><img src="{% static 'images/logo.jpg' %}"></a>
       <nav class="left">
-        <a href='{% url "home" %}' class="active">Hombres</a>
-        <a href='{% url "mujeres" %}'>Mujeres</a>
+        <a href='{% url "home" %}'>Hombres</a>
+        <a href='{% url "mujeres" %}' class="active">Mujeres</a>
         <a href='{% url "ecoloop" %}'>Eco Loop</a>
         <a href='{% url "noticias" %}'>Noticias</a>
         <a href='{% url "contacto" %}'>Contacto</a>
@@ -148,7 +148,7 @@
   </section>
   <footer class="wrapper" id="footer">
     <aside class="wrapped">
-      <img src="{% static 'images/footer-logo.png' %}">
+      <img src="images/footer-logo.png">
       <div class="column">
         <h3><span>Noticias</span> recientes</h3>
         <article>
@@ -168,7 +168,7 @@
         <input type="email" placeholder="E-mail" name="email" id="email">
         <input type="button" value="Enviar" id="submit-email">
         <h3><span>Síguenos</span>:</h3>
-        <img src="{% static 'images/social-buttons.png' %}">
+        <img src="images/social-buttons.png">
       </div>
     </aside>
   </footer>

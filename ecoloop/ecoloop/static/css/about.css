@@ -1,0 +1,98 @@
+#about .wrapped {
+  padding: 20px 0;
+}
+
+#about .column {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#about h2,
+#about h3,
+#about label {
+  color: #949494;
+}
+
+#about #about-sidebar {
+  width: 230px;
+  border-right: solid 1px #d5a35e;
+  padding-right: 40px;
+}
+
+#about #about-sidebar h3 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: 'antoniobold';
+}
+
+#about #about-sidebar h3 span {
+  border-bottom: solid 5px #d5a35d;
+}
+
+#about #about-sidebar label {
+  font-size: 14px;
+  font-family: 'Roboto Condensed';
+  text-transform: none;
+}
+
+#about #about-sidebar input {
+  border: none;
+}
+
+#about #about-sidebar #email {
+  display: block;
+  width: 100%;
+  background: #edecec;
+  color: #9c9c9c;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+#about #about-sidebar #submit-email {
+  background: #d5a35d;
+  color: #fff;
+  font-family: 'antoniobold';
+  text-transform: uppercase;
+  padding: 5px 30px;
+  margin-bottom: 20px;
+  border: solid 1px #e1e1e1;
+}
+
+#about #about-sidebar article {
+  font-size: 11px;
+  margin-bottom: 15px;
+  padding-left: 50px;
+  text-align: justify;
+  background: url('../images/calendar-2.png') no-repeat left top;
+  color: #9c9c9c;
+}
+
+#about #about-sidebar article h4 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+#about #about-sidebar article p {
+  text-transform: none;
+  margin: 0;
+}
+
+#about #about-sidebar article a {
+  color: #d5a35d;
+  text-transform: none;
+}
+
+#about #about-content {
+  width: 570px;
+  margin-left: 50px;
+}
+
+#about #about-content h2 {
+  margin: 0;
+}
+
+#about #about-content p {
+  color: #8e8e8e;
+  font-family: 'Roboto Condensed';
+  text-transform: none;
+}

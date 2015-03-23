@@ -3,20 +3,20 @@
 <head>
   <title>Eco Loop</title>
   <meta charset="utf-8">
-  {% load staticfiles %}
   <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="{% static 'css/layout.css' %}">
+  <link rel="stylesheet" type="text/css" href="styles/layout.css">
+  <link rel="stylesheet" type="text/css" href="styles/detail.css">
 </head>
-<body>
+<body id="detail-page">
   <header class="wrapper" id="nav-header">
     <aside class="wrapped">
-      <a href="#" id="nav-logo"><img src="{% static 'images/logo.jpg' %}"></a>
+      <a href="#" id="nav-logo"><img src="images/logo.jpg"></a>
       <nav class="left">
-        <a href='{% url "home" %}' class="active">Hombres</a>
-        <a href='{% url "mujeres" %}'>Mujeres</a>
-        <a href='{% url "ecoloop" %}'>Eco Loop</a>
-        <a href='{% url "noticias" %}'>Noticias</a>
-        <a href='{% url "contacto" %}'>Contacto</a>
+        <a href="#" class="active">Hombres</a>
+        <a href="mujeres.html">Mujeres</a>
+        <a href="ecoloop.html">Eco Loop</a>
+        <a href="news.html">Noticias</a>
+        <a href="contact.html">Contacto</a>
       </nav>
       <nav class="right">
         <a href="#" id="cart-link">Productos / 0</a>
@@ -24,12 +24,50 @@
       </nav>
     </aside>
   </header>
-  <aside id="big-photo">
-  </aside>
   <section class="wrapper" id="breadcrumb-nav">
     <nav class="wrapped breadcrumb"><a href="#">Home</a> / Hombres</nav>
   </section>
   <section class="wrapper" id="gallery">
+    <section class="wrapped">
+      <aside class="item highlighted-item big-item column">
+        <div class="photo">
+          <a href="#" class="share-item"></a>
+          <span class="badge top left">Nuevo</span>
+          <img src="images/detail.jpg">
+          <span class="bar bottom">
+            Vista previa
+          </span>
+        </div>
+      </aside>
+      <aside class="item-description column">
+        <h3>Love Planet</h3>
+        <h4>Precio: S/. 99.90</h4>
+
+        <p>Polo cuello redondo con diseño de flora y fauna.
+Estampado en serigrafía discharge con tinta natural (tacto cero) artesanal. Tela de algodón organico (100% algodón organico) 40/1. Prenda pre-lavada para evitar encogimiento y descoloración.
+Producto 100% peruano.</p>
+
+        <h5>Seleccione su talla</h5>
+        <nav class="item-prices">
+          <a href="#" class="active">Small</a>
+          <a href="#">Medium</a>
+          <a href="#">Large</a>
+        </nav>
+        
+        <h6>Dimensiones / <strong>Small</strong></h6>
+        <ul class="item-sizes">
+          <li><strong>Ancho</strong> 52cm</li>
+          <li><strong>Alto</strong> 72cm</li>
+        </ul>
+        
+        <a class="add-to-cart">Añadir al carrito</a>
+
+        <nav class="arrow-pagination">
+          <a href="#"><img src="images/arrow-left.png"></a>
+          <a href="#"><img src="images/arrow-right.png"></a>
+        </nav>
+      </aside>
+    </section>
     <section class="wrapped">
       <aside class="item highlighted-item">
         <div class="photo">
@@ -88,58 +126,6 @@
           <li class="second-highlighted">Precio: S/. 99.90</li>
         </ul>
       </aside>
-      <aside class="item">
-        <div class="photo">
-          <img src="images/polo_1.jpg">
-        </div>
-        <ul class="info left">
-          <li>Hombre</li>
-          <li class="highlighted">Love Planet</li>
-        </ul>
-        <ul class="info right">
-          <li>Tallas: S / M / L</li>
-          <li class="second-highlighted">Precio: S/. 99.90</li>
-        </ul>
-      </aside>
-      <aside class="item">
-        <div class="photo">
-          <img src="images/polo_2.jpg">
-        </div>
-        <ul class="info left">
-          <li>Hombre</li>
-          <li class="highlighted">Love Planet</li>
-        </ul>
-        <ul class="info right">
-          <li>Tallas: S / M / L</li>
-          <li class="second-highlighted">Precio: S/. 99.90</li>
-        </ul>
-      </aside>
-      <aside class="item">
-        <div class="photo">
-          <img src="images/polo_3.jpg">
-        </div>
-        <ul class="info left">
-          <li>Hombre</li>
-          <li class="highlighted">Love Planet</li>
-        </ul>
-        <ul class="info right">
-          <li>Tallas: S / M / L</li>
-          <li class="second-highlighted">Precio: S/. 99.90</li>
-        </ul>
-      </aside>
-      <aside class="item">
-        <div class="photo">
-          <img src="images/polo_4.jpg">
-        </div>
-        <ul class="info left">
-          <li>Hombre</li>
-          <li class="highlighted">Love Planet</li>
-        </ul>
-        <ul class="info right">
-          <li>Tallas: S / M / L</li>
-          <li class="second-highlighted">Precio: S/. 99.90</li>
-        </ul>
-      </aside>
     </section>
     <nav class="wrapped pagination">
       <span class="actual-page">1</span>
@@ -148,7 +134,7 @@
   </section>
   <footer class="wrapper" id="footer">
     <aside class="wrapped">
-      <img src="{% static 'images/footer-logo.png' %}">
+      <img src="images/footer-logo.png">
       <div class="column">
         <h3><span>Noticias</span> recientes</h3>
         <article>
@@ -168,7 +154,7 @@
         <input type="email" placeholder="E-mail" name="email" id="email">
         <input type="button" value="Enviar" id="submit-email">
         <h3><span>Síguenos</span>:</h3>
-        <img src="{% static 'images/social-buttons.png' %}">
+        <img src="images/social-buttons.png">
       </div>
     </aside>
   </footer>

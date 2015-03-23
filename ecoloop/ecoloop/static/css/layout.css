@@ -1,0 +1,349 @@
+@font-face {
+  font-family: 'antoniobold';
+  src: url('../fonts/Antonio/Antonio-Bold-webfont.eot');
+  src: url('../fonts/Antonio/Antonio-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Antonio/Antonio-Bold-webfont.woff2') format('woff2'),
+       url('../fonts/Antonio/Antonio-Bold-webfont.woff') format('woff'),
+       url('../fonts/Antonio/Antonio-Bold-webfont.ttf') format('truetype'),
+       url('../fonts/Antonio/Antonio-Bold-webfont.svg#antoniobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'antoniolight';
+  src: url('../fonts/Antonio/Antonio-Light-webfont.eot');
+  src: url('../fonts/Antonio/Antonio-Light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Antonio/Antonio-Light-webfont.woff2') format('woff2'),
+       url('../fonts/Antonio/Antonio-Light-webfont.woff') format('woff'),
+       url('../fonts/Antonio/Antonio-Light-webfont.ttf') format('truetype'),
+       url('../fonts/Antonio/Antonio-Light-webfont.svg#antoniolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'antonioregular';
+  src: url('../fonts/Antonio/Antonio-Regular-webfont.eot');
+  src: url('../fonts/Antonio/Antonio-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Antonio/Antonio-Regular-webfont.woff2') format('woff2'),
+       url('../fonts/Antonio/Antonio-Regular-webfont.woff') format('woff'),
+       url('../fonts/Antonio/Antonio-Regular-webfont.ttf') format('truetype'),
+       url('../fonts/Antonio/Antonio-Regular-webfont.svg#antonioregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'antoniobold';
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  display: block;
+  width: 100%;
+}
+
+.wrapper .wrapped {
+  display: block;
+  width: 860px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.highlighted {
+  color: #d5a35d;
+}
+
+#nav-header, #footer {
+  background: #000;
+}
+
+#nav-header {
+  height: 100px;
+}
+
+#nav-header a {
+  color: #8a7f7f;
+}
+
+#nav-header nav {
+  line-height: 100px;
+}
+
+#nav-header nav.left {
+  margin-left: 210px;
+}
+
+#nav-header nav.left a {
+  margin-right: 25px;
+}
+
+#nav-header nav.right a {
+  margin-left: 15px;
+}
+
+#nav-header #cart-link {
+  background: url('../images/cart-icon.png') no-repeat left center;
+  padding-left: 30px;
+}
+
+#nav-header a.active,
+#nav-header a:hover,
+#nav-header nav.right a {
+  color: #fff;
+}
+
+#nav-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 142px;
+  height: 182px;
+}
+
+#big-photo {
+  width: 100%;
+  height: 286px;
+  background: url('../images/big-photo-text.jpg') no-repeat center center;
+  background-size: 100% auto;
+}
+
+#big-photo-2 {
+  width: 100%;
+  height: 286px;
+  background: url('../images/big-photo-text-2.jpg') no-repeat center center;
+  background-size: 100% auto;
+}
+
+#breadcrumb-nav .breadcrumb {
+  color: #8a7f7f;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#breadcrumb-nav .breadcrumb a {
+  color: #e0e0e0;
+}
+
+#gallery {
+  background: #fff;
+}
+
+#gallery .item {
+  display: inline-block;
+  width: 190px;
+  margin-right: 30px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+#gallery .item:nth-child(4n) {
+  margin-right: 0;
+}
+
+#gallery .item .photo {
+  position: relative;
+}
+
+#gallery .item.highlighted-item .photo {
+  border: solid 1px #d5a35d;
+}
+
+#gallery .item .photo img {
+  display: block;
+  width: 100%;
+}
+
+#gallery .item .share-item {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url('../images/share-icon.png') no-repeat;
+  top: 0;
+  right: -20px;
+}
+
+#gallery .item .badge {
+  position :absolute;
+  background: #d5a35d;
+  color: #fff;
+  font-size: 14px;
+  padding: 2px 15px;
+}
+
+#gallery .item .badge.top {
+  top: 0;
+}
+
+#gallery .item .badge.left {
+  left: 0;
+}
+
+#gallery .item .bar {
+  position: absolute;
+  width: 100%;
+  background: #d5a35d;
+  color: #fff;
+  padding: 2px 10px;
+}
+
+#gallery .item .bar.bottom {
+  bottom: 0;
+  font-family: 'antonioregular';
+  font-size: 12px;
+  text-transform: lowercase;
+}
+
+#gallery .item .info {
+  display: inline-block;
+  line-height: 17px;
+  list-style: none;
+  color: #949494;
+  font-size: 11px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#gallery .item .info .highlighted {
+  font-size: 15px;
+}
+
+#gallery .item .info .second-highlighted {
+  font-size: 12px;
+}
+
+#gallery .item .info.right {
+  text-align: right;
+}
+
+#gallery .pagination {
+  text-align: right;
+}
+
+#gallery .pagination .actual-page,
+#gallery .pagination .page {
+  display: inline-block;
+  width: 18px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+#gallery .pagination .actual-page {
+  background: #d5a35d;
+  color: #fff;
+}
+
+#gallery .pagination .page {
+  background: #e1e1e1;
+  color: #727271;
+}
+
+#footer {
+  color: #fff;
+  font-family: 'Roboto Condensed';
+}
+
+#footer .wrapped {
+  padding: 26px 0;
+}
+
+#footer .column {
+  display: inline-block;
+  width: 224px;
+  vertical-align: top;
+}
+
+#footer .column:nth-child(2n) {
+  margin: 0 69px;
+}
+
+#footer .column:nth-child(2n+1) {
+  margin-left: 69px;
+}
+
+#footer .column h3 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: 'antoniobold';
+}
+
+#footer .column h3 span {
+  border-bottom: solid 5px #d5a35d;
+}
+
+#footer article {
+  font-size: 11px;
+  margin-bottom: 15px;
+  padding-left: 50px;
+  text-align: justify;
+  background: url('../images/calendar.png') no-repeat left top;
+}
+
+#footer article h4 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+#footer article p {
+  text-transform: none;
+  margin: 0;
+}
+
+#footer article a {
+  color: #d5a35d;
+  text-transform: none;
+}
+
+#footer label {
+  font-size: 11px;
+  font-family: 'Roboto Condensed';
+}
+
+#footer input {
+  border: none;
+}
+
+#footer #email {
+  display: block;
+  width: 100%;
+  background: #433c3b;
+  color: #fff;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+#footer #submit-email {
+  background: #d5a35d;
+  color: #fff;
+  font-family: 'antoniobold';
+  text-transform: uppercase;
+  padding: 5px 30px;
+  margin-bottom: 20px;
+}

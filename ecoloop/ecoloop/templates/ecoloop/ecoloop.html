@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eco Loop</title>
+  <meta charset="utf-8">
+  {% load staticfiles %}
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/layout.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+</head>
+<body>
+  <header class="wrapper" id="nav-header">
+    <aside class="wrapped">
+      <a href="#" id="nav-logo"><img src="images/logo.jpg"></a>
+      <nav class="left">
+        <a href='{% url "home" %}'>Hombres</a>
+        <a href='{% url "mujeres" %}'>Mujeres</a>
+        <a href='{% url "ecoloop" %}' class="active">Eco Loop</a>
+        <a href='{% url "noticias" %}'>Noticias</a>
+        <a href='{% url "contacto" %}'>Contacto</a>
+      </nav>
+      <nav class="right">
+        <a href="#" id="cart-link">Productos / 0</a>
+        <a href="#">Costo / 0.00</a>
+      </nav>
+    </aside>
+  </header>
+  <aside id="big-photo-2">
+  </aside>
+  <section class="wrapper" id="about">
+    <section class="wrapped">
+      <aside class="column" id="about-sidebar">
+        <h3><span>Únete</span> a Eco Loop</h3>
+        <label for="email">Suscríbete y obtén información</label>
+        <input type="email" placeholder="E-mail" name="email" id="email">
+        <input type="button" value="Enviar" id="submit-email">
+
+        <h3><span>Noticias</span> recientes</h3>
+        <article>
+          <h4>Campaña Eco Loop / Recicle 09 de Marzo</h4>
+          <p>Es una campaña que fomenta el consumo de productos que sus envases sean de un material que se pueda reciclar.</p>
+          <a href="#">Ver más</a>
+        </article>
+        <article>
+          <h4>Campaña Eco Loop / Recicle 09 de Marzo</h4>
+          <p>Es una campaña que fomenta el consumo de productos que sus envases sean de un material que se pueda reciclar.</p>
+          <a href="#">Ver más</a>
+        </article>
+        <article>
+          <h4>Campaña Eco Loop / Recicle 09 de Marzo</h4>
+          <p>Es una campaña que fomenta el consumo de productos que sus envases sean de un material que se pueda reciclar.</p>
+          <a href="#">Ver más</a>
+        </article>
+      </aside>
+      <aside class="column" id="about-content">
+        <h2>Eco Loop</h2>
+        <p>Soy una idea hecha realidad que comenzó a tomar forma a partir del 2009, gracias a Jorge Palacios y Renzo Bravo. Sus pasiones por la música y la gráfica hicieron química, dando como resultado una amistad que se fue llenando de nuevos objetivos para ambos.</p>
+        <h3>Visión</h3>
+        <p>Trabajar unidos para ser la mejor empresa del Perú en el rubro  textil, con el fin de ser el principal vocero e difusor de ideas de cambio.</p>
+        <h3>Misión</h3>
+        <p>Empresa textil Eco Amigable con proyección a nivel nacional, sólida y dinámica. <br>
+Promover la Concientiza  y apoyar al medio ambiente a través del arte. <br>
+Motivar una cultura de respeto.</p>
+      </aside>
+    </section>
+  </section>
+  <footer class="wrapper" id="footer">
+    <aside class="wrapped">
+      <img src="images/footer-logo.png">
+      <div class="column">
+        <h3><span>Noticias</span> recientes</h3>
+        <article>
+          <h4>Campaña Eco Loop / Recicle 09 de Marzo</h4>
+          <p>Es una campaña que fomenta el consumo de productos que sus envases sean de un material que se pueda reciclar.</p>
+          <a href="#">Ver más</a>
+        </article>
+        <article>
+          <h4>Campaña Eco Loop / Recicle 09 de Marzo</h4>
+          <p>Es una campaña que fomenta el consumo de productos que sus envases sean de un material que se pueda reciclar.</p>
+          <a href="#">Ver más</a>
+        </article>
+      </div>
+      <div class="column">
+        <h3><span>Únete</span> a Eco Loop</h3>
+        <label for="email">Suscríbete y obtén información</label>
+        <input type="email" placeholder="E-mail" name="email" id="email">
+        <input type="button" value="Enviar" id="submit-email">
+        <h3><span>Síguenos</span>:</h3>
+        <img src="images/social-buttons.png">
+      </div>
+    </aside>
+  </footer>
+</body>
+</html>

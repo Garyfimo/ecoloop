@@ -7,8 +7,3 @@ from .models import Prenda
 class PrendaAdmin(admin.ModelAdmin):
 	pass
 
-class EcoloopAdminSite(AdminSite):
-	site_header = "Ecoloop Administration"
-	site_title = "Administration - Ecoloop"
-
-admin_site = EcoloopAdminSite()

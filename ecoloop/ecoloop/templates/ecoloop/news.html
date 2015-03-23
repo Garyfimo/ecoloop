@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eco Loop</title>
+  <meta charset="utf-8">
+  {% load staticfiles %}
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/layout.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/news.css' %}">
+</head>
+<body>
+  <header class="wrapper" id="nav-header">
+    <aside class="wrapped">
+      <a href="#" id="nav-logo"><img src="images/logo.jpg"></a>
+      <nav class="left">
+        <a href='{% url "home" %}'>Hombres</a>
+        <a href='{% url "mujeres" %}'>Mujeres</a>
+        <a href='{% url "ecoloop" %}'>Eco Loop</a>
+        <a href='{% url "noticias" %}' class="active">Noticias</a>
+        <a href='{% url "contacto" %}'>Contacto</a>
+      </nav>
+      <nav class="right">
+        <a href="#" id="cart-link">Productos / 0</a>
+        <a href="#">Costo / 0.00</a>
+      </nav>
+    </aside>
+  </header>
+  <aside id="big-photo-2">
+  </aside>
+  <section class="wrapper" id="about">
+    <section class="wrapped">
+      <aside class="column" id="about-sidebar">
+        <h3><span>Únete</span> a Eco Loop</h3>
+        <label for="email">Suscríbete y obtén información</label>
+        <input type="email" placeholder="E-mail" name="email" id="email">
+        <input type="button" value="Enviar" id="submit-email">
+
+        <h3><span>Noticias</span> recientes</h3>
+        <article>
+          <h4>Campaña Eco Loop / Recicle 09 de Marzo</h4>
+          <p>Es una campaña que fomenta el consumo de productos que sus envases sean de un material que se pueda reciclar.</p>
+          <a href="#">Ver más</a>
+        </article>
+        <article>
+          <h4>Campaña Eco Loop / Recicle 09 de Marzo</h4>
+          <p>Es una campaña que fomenta el consumo de productos que sus envases sean de un material que se pueda reciclar.</p>
+          <a href="#">Ver más</a>
+        </article>
+        <article>
+          <h4>Campaña Eco Loop / Recicle 09 de Marzo</h4>
+          <p>Es una campaña que fomenta el consumo de productos que sus envases sean de un material que se pueda reciclar.</p>
+          <a href="#">Ver más</a>
+        </article>
+      </aside>
+      <aside class="column news" id="about-content">
+        <h2>CAMPAÑA ECO LOOP/ RECICLE 09 DE MARZO</h2>
+        <div class="photo">
+          <span class="badge">09<br>Mar</span>
+          <a href="#" class="share-item"></a>
+          <img src="{% static 'images/news-photo.jpg' %}">
+        </div>
+        <p>Soy una idea hecha realidad que comenzó a tomar forma a partir del 2009, gracias a Jorge Palacios y Renzo Bravo. Sus pasiones por la música y la gráfica hicieron química, dando como resultado una amistad que se fue llenando de nuevos objetivos para ambos.
+        <br>
+        El proyecto se comenzó a desarrollar a partir de una nueva visión frente al entorno, conectándola a la idea de crear una marca que abra camino a una nueva percepción.</p>
+        <h3>Galería de fotos</h3>
+        <img src="images/news-photo-small.jpg">
+        <img src="images/news-photo-small.jpg">
+        <img src="images/news-photo-small.jpg">
+        <img src="images/news-photo-small.jpg">
+        <img src="images/news-photo-small.jpg">
+        <img src="images/news-photo-small.jpg">
+        <nav class="pagination">
+          <span class="actual-page">1</span>
+          <a href="#" class="page">2</a>
+          <a href="#" class="page">3</a>
+          <a href="#" class="page">4</a>
+          <a href="#" class="page">5</a>
+          <a href="#" class="page">6</a>
+        </nav>
+      </aside>
+    </section>
+  </section>
+  <footer class="wrapper" id="footer">
+    <aside class="wrapped">
+      <img src="images/footer-logo.png">
+      <div class="column">
+        <h3><span>Noticias</span> recientes</h3>
+        <article>
+          <h4>Campaña Eco Loop / Recicle 09 de Marzo</h4>
+          <p>Es una campaña que fomenta el consumo de productos que sus envases sean de un material que se pueda reciclar.</p>
+          <a href="#">Ver más</a>
+        </article>
+        <article>
+          <h4>Campaña Eco Loop / Recicle 09 de Marzo</h4>
+          <p>Es una campaña que fomenta el consumo de productos que sus envases sean de un material que se pueda reciclar.</p>
+          <a href="#">Ver más</a>
+        </article>
+      </div>
+      <div class="column">
+        <h3><span>Únete</span> a Eco Loop</h3>
+        <label for="email">Suscríbete y obtén información</label>
+        <input type="email" placeholder="E-mail" name="email" id="email">
+        <input type="button" value="Enviar" id="submit-email">
+        <h3><span>Síguenos</span>:</h3>
+        <img src="images/social-buttons.png">
+      </div>
+    </aside>
+  </footer>
+</body>
+</html>

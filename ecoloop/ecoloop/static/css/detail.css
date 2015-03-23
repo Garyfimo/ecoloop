@@ -1,0 +1,96 @@
+#detail-page .breadcrumb {
+  padding-left: 162px;
+}
+
+#gallery .column {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#gallery .big-item {
+  width: 366px;
+}
+
+#gallery .item-description {
+  width: 440px;
+  padding: 0 43px;
+}
+
+#gallery .item-description h3 {
+  display: inline-block;
+  color: #d5a35d;
+  border-bottom: solid 5px #d5a35d;
+  font-size: 22px;
+  margin: 0;
+}
+
+#gallery .item-description h4,
+#gallery .item-description h5 {
+  color: #949494;
+  margin: 10px 0;
+}
+
+#gallery .item-description h4 {
+  font-size: 20px;
+}
+
+#gallery .item-description p {
+  color: #a7a7a7;
+  font-family: 'Roboto Condensed';
+  font-size: 14px;
+  text-transform: none;
+}
+
+#gallery .item-description h5 {
+  font-size: 16px;
+}
+
+#gallery .item-prices a {
+  display: inline-block;
+  padding: 5px 15px;
+  color: #fff;
+  background: #b3b3b3;
+  font-family: 'antonioregular';
+  font-size: 12px;
+}
+
+#gallery .item-prices a.active {
+  background: #d5a35e;
+}
+
+#gallery .item-description h6 {
+  color: #afafaf;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+#gallery .item-description h6 strong {
+  color: #d5a35e;
+}
+
+#gallery .item-sizes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #d5a35e;
+  font-size: 12px;
+}
+
+#gallery .item-sizes strong {
+  color: #afafaf;
+}
+
+#gallery .add-to-cart {
+  display: inline-block;
+  padding: 5px 30px;
+  color: #fff;
+  background: #d5a35e;
+  font-family: 'antonioregular';
+  font-size: 12px;
+}
+
+#gallery .arrow-pagination {
+  position: absolute;
+  bottom: 20px;
+}
