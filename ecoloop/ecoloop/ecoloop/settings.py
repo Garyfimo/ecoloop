@@ -59,14 +59,14 @@ WSGI_APPLICATION = 'ecoloop.wsgi.application'
 
 DATABASES = {
         'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'd40kbq2e7do1q1',                      # Or path to database file if using sqlite3.
-        # The following settings are not used with sqlite3:
-        'USER': 'hjqfcrjpkzhqri',
-        'PASSWORD': 'hv1VW9c8xDAuGaxw6qfDLyrla9',
-        'HOST': 'ec2-107-22-173-230.compute-1.amazonaws.com',                      # Empty for localhost through domain sockets or           '127.0.0.1' for localhost through TCP.
-        'PORT': '5432',                      # Set to empty string for default.
-        }
+        'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'd40kbq2e7do1q1', # Or path to database file if using sqlite3.
+        # The following settings are not used with sqlite3:
+        'USER': 'hjqfcrjpkzhqri',
+        'PASSWORD': 'hv1VW9c8xDAuGaxw6qfDLyrla9',
+        'HOST': 'ec2-107-22-173-230.compute-1.amazonaws.com', # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+        'PORT': '5432', # Set to empty string for default.
+        }
     }
 
 # Internationalization
