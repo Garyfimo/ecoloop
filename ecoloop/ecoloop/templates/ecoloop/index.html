@@ -8,169 +8,43 @@
   <link rel="stylesheet" type="text/css" href="{% static 'css/layout.css' %}">
 </head>
 <body>
-  <header class="wrapper" id="nav-header">
-    <aside class="wrapped">
-      <a href="#" id="nav-logo"><img src="{% static 'images/logo.jpg' %}"></a>
-      <nav class="left">
-        <a href='{% url "home" %}' class="active">Hombres</a>
-        <a href='{% url "mujeres" %}'>Mujeres</a>
-        <a href='{% url "ecoloop" %}'>Eco Loop</a>
-        <a href='{% url "noticias" %}'>Noticias</a>
-        <a href='{% url "contacto" %}'>Contacto</a>
-      </nav>
-      <nav class="right">
-        <a href="#" id="cart-link">Productos / 0</a>
-        <a href="#">Costo / 0.00</a>
-      </nav>
-    </aside>
-  </header>
+  {% include 'ecoloop/header.html' %}
   <aside id="big-photo">
   </aside>
   <section class="wrapper" id="breadcrumb-nav">
     <nav class="wrapped breadcrumb"><a href="#">Home</a> / Hombres</nav>
   </section>
+  {% if list_prenda %}
   <section class="wrapper" id="gallery">
     <section class="wrapped">
+      {% for prenda in list_prenda %}
+
       <aside class="item highlighted-item">
         <div class="photo">
           <a href="#" class="share-item"></a>
           <span class="badge top left">Nuevo</span>
-          <img src="images/polo_1.jpg">
+          <img src="{{ prenda.imagen_url }}">
           <span class="bar bottom">
             Vista previa
           </span>
         </div>
         <ul class="info left">
           <li>Hombre</li>
-          <li class="highlighted">Love Planet</li>
+          <li class="highlighted">{{ prenda.descripcion }}</li>
         </ul>
         <ul class="info right">
-          <li>Tallas: S / M / L</li>
-          <li class="second-highlighted">Precio: S/. 99.90</li>
+          <li>Tallas: {{ prenda.talla }}</li>
+          <li class="second-highlighted">Precio: S/. {{ prenda.precio }}</li>
         </ul>
       </aside>
-      <aside class="item">
-        <div class="photo">
-          <img src="images/polo_2.jpg">
-        </div>
-        <ul class="info left">
-          <li>Hombre</li>
-          <li class="highlighted">Love Planet</li>
-        </ul>
-        <ul class="info right">
-          <li>Tallas: S / M / L</li>
-          <li class="second-highlighted">Precio: S/. 99.90</li>
-        </ul>
-      </aside>
-      <aside class="item">
-        <div class="photo">
-          <img src="images/polo_3.jpg">
-        </div>
-        <ul class="info left">
-          <li>Hombre</li>
-          <li class="highlighted">Love Planet</li>
-        </ul>
-        <ul class="info right">
-          <li>Tallas: S / M / L</li>
-          <li class="second-highlighted">Precio: S/. 99.90</li>
-        </ul>
-      </aside>
-      <aside class="item">
-        <div class="photo">
-          <img src="images/polo_4.jpg">
-        </div>
-        <ul class="info left">
-          <li>Hombre</li>
-          <li class="highlighted">Love Planet</li>
-        </ul>
-        <ul class="info right">
-          <li>Tallas: S / M / L</li>
-          <li class="second-highlighted">Precio: S/. 99.90</li>
-        </ul>
-      </aside>
-      <aside class="item">
-        <div class="photo">
-          <img src="images/polo_1.jpg">
-        </div>
-        <ul class="info left">
-          <li>Hombre</li>
-          <li class="highlighted">Love Planet</li>
-        </ul>
-        <ul class="info right">
-          <li>Tallas: S / M / L</li>
-          <li class="second-highlighted">Precio: S/. 99.90</li>
-        </ul>
-      </aside>
-      <aside class="item">
-        <div class="photo">
-          <img src="images/polo_2.jpg">
-        </div>
-        <ul class="info left">
-          <li>Hombre</li>
-          <li class="highlighted">Love Planet</li>
-        </ul>
-        <ul class="info right">
-          <li>Tallas: S / M / L</li>
-          <li class="second-highlighted">Precio: S/. 99.90</li>
-        </ul>
-      </aside>
-      <aside class="item">
-        <div class="photo">
-          <img src="images/polo_3.jpg">
-        </div>
-        <ul class="info left">
-          <li>Hombre</li>
-          <li class="highlighted">Love Planet</li>
-        </ul>
-        <ul class="info right">
-          <li>Tallas: S / M / L</li>
-          <li class="second-highlighted">Precio: S/. 99.90</li>
-        </ul>
-      </aside>
-      <aside class="item">
-        <div class="photo">
-          <img src="images/polo_4.jpg">
-        </div>
-        <ul class="info left">
-          <li>Hombre</li>
-          <li class="highlighted">Love Planet</li>
-        </ul>
-        <ul class="info right">
-          <li>Tallas: S / M / L</li>
-          <li class="second-highlighted">Precio: S/. 99.90</li>
-        </ul>
-      </aside>
+    {% endfor %}
     </section>
     <nav class="wrapped pagination">
       <span class="actual-page">1</span>
       <a href="#" class="page">2</a>
     </nav>
   </section>
-  <footer class="wrapper" id="footer">
-    <aside class="wrapped">
-      <img src="{% static 'images/footer-logo.png' %}">
-      <div class="column">
-        <h3><span>Noticias</span> recientes</h3>
-        <article>
-          <h4>Campaña Eco Loop / Recicle 09 de Marzo</h4>
-          <p>Es una campaña que fomenta el consumo de productos que sus envases sean de un material que se pueda reciclar.</p>
-          <a href="#">Ver más</a>
-        </article>
-        <article>
-          <h4>Campaña Eco Loop / Recicle 09 de Marzo</h4>
-          <p>Es una campaña que fomenta el consumo de productos que sus envases sean de un material que se pueda reciclar.</p>
-          <a href="#">Ver más</a>
-        </article>
-      </div>
-      <div class="column">
-        <h3><span>Únete</span> a Eco Loop</h3>
-        <label for="email">Suscríbete y obtén información</label>
-        <input type="email" placeholder="E-mail" name="email" id="email">
-        <input type="button" value="Enviar" id="submit-email">
-        <h3><span>Síguenos</span>:</h3>
-        <img src="{% static 'images/social-buttons.png' %}">
-      </div>
-    </aside>
-  </footer>
+  {% endif %}
+  {% include 'ecoloop/footer.html' %}
 </body>
 </html>

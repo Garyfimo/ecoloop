@@ -1,0 +1,18 @@
+{% load staticfiles %}
+
+<header class="wrapper" id="nav-header">
+    <aside class="wrapped">
+      <a href="#" id="nav-logo"><img src="{% static 'images/logo.jpg' %}"></a>
+      <nav class="left">
+        <a href='{% url "home" %}' {% if is_active == 'hombres' %} class="active" {% endif %}>Hombres</a>
+        <a href='{% url "mujeres" %}' {% if is_active == 'mujeres' %} class="active" {% endif %}>Mujeres</a>
+        <a href='{% url "ecoloop" %}' {% if is_active == 'ecoloop' %} class="active" {% endif %}>Eco Loop</a>
+        <a href='{% url "noticias" %}' {% if is_active == 'noticias' %} class="active" {% endif %}>Noticias</a>
+        <a href='{% url "contacto" %}' {% if is_active == 'contacto' %} class="active" {% endif %}>Contacto</a>
+      </nav>
+      <nav class="right">
+        <a href="#" id="cart-link">Productos / 0</a>
+        <a href="#">Costo / 0.00</a>
+      </nav>
+    </aside>
+  </header>

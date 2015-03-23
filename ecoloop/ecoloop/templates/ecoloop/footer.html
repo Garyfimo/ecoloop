@@ -1,0 +1,28 @@
+{% load staticfiles %}
+
+<footer class="wrapper" id="footer">
+    <aside class="wrapped">
+      <img src="{% static 'images/footer-logo.png' %}">
+      <div class="column">
+        <h3><span>Noticias</span> recientes</h3>
+        <article>
+          <h4>Campaña Eco Loop / Recicle 09 de Marzo</h4>
+          <p>Es una campaña que fomenta el consumo de productos que sus envases sean de un material que se pueda reciclar.</p>
+          <a href="#">Ver más</a>
+        </article>
+        <article>
+          <h4>Campaña Eco Loop / Recicle 09 de Marzo</h4>
+          <p>Es una campaña que fomenta el consumo de productos que sus envases sean de un material que se pueda reciclar.</p>
+          <a href="#">Ver más</a>
+        </article>
+      </div>
+      <div class="column">
+        <h3><span>Únete</span> a Eco Loop</h3>
+        <label for="email">Suscríbete y obtén información</label>
+        <input type="email" placeholder="E-mail" name="email" id="email">
+        <input type="button" value="Enviar" id="submit-email">
+        <h3><span>Síguenos</span>:</h3>
+        <img src="{% static 'images/social-buttons.png' %}">
+      </div>
+    </aside>
+  </footer>
