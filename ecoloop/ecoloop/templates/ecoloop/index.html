@@ -6,6 +6,7 @@
   {% load staticfiles %}
   <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="{% static 'css/layout.css' %}">
+  <link href="{% static 'css/lightbox.css' %}" rel="stylesheet" />
 </head>
 <body>
   {% include 'ecoloop/header.html' %}
@@ -23,10 +24,10 @@
         <div class="photo">
           <a href="#" class="share-item"></a>
           <span class="badge top left">Nuevo</span>
-          <img src="{{ prenda.imagen_url }}">
-          <span class="bar bottom">
+          <img class="example-image" src="{{ prenda.imagen_url }}">
+          <a class="example-image-link" href="{{ prenda.imagen_url }}" data-lightbox="prenda"><span class="bar bottom">
             Vista previa
-          </span>
+          </span></a>
         </div>
         <ul class="info left">
           <li>Hombre</li>
@@ -47,4 +48,6 @@
   {% endif %}
   {% include 'ecoloop/footer.html' %}
 </body>
+<script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+<script src="{% static 'js/lightbox.min.js' %}"></script>
 </html>
