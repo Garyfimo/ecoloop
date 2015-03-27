@@ -110,7 +110,12 @@ a {
   padding-left: 30px;
 }
 
-#nav-header a.active,
+#nav-header a.active
+{
+  color: #fff;
+  border-bottom: solid 2px #d5a35e;
+}
+
 #nav-header a:hover,
 #nav-header nav.right a {
   color: #fff;

@@ -32,6 +32,12 @@ class Ecoloop(models.Model):
 	def __unicode__(self):
 		return "ECOLOOP"
 
+class Banner(models.Model):
+	descripcion = models.CharField(max_length=50)
+	banner_url = models.URLField(null=True,max_length=250)
+	def __unicode__(self):
+		return self.descripcion
+
 
 
 
